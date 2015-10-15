@@ -1,0 +1,4 @@
+#!/bin/bash
+rm *.jpg
+rm *.avi
+rm send.pyc

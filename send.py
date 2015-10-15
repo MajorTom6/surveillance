@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import os
 import smtplib
 from email.mime.text import MIMEText
@@ -20,6 +21,6 @@ def SendMail(ImgFileName):
     s = smtplib.SMTP('smtp.gmail.com:587')
     s.ehlo()
     s.starttls()
-    s.login(msg['From'], 'password')
+    s.login(msg['From'], 'soyuzpls')
     s.sendmail(msg['From'], msg['To'], msg.as_string())
     s.quit()
