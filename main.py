@@ -67,8 +67,11 @@ while(cap.isOpened()):
 
 	else:
 		break
-
+	
+	z = z+1
 	if z == 400:
+		print("New first frame.")
 		firstFrame = None
+		z=0
 
 cap.release()
